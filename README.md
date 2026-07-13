@@ -1,4 +1,7 @@
 RAMP — Roblox Auto MIDI Player
+![Download](https://img.shields.io/github/v/release/M7xt719/RAMP?label=Download&style=for-the-badge&color=6366f1)
+![Windows 10 / 11](https://img.shields.io/badge/Windows-10%20%2F%2011%20(64--bit)-0078D6?style=for-the-badge&logo=windows)
+![No install needed](https://img.shields.io/badge/Setup-portable%2C%20no%20install-22c55e?style=for-the-badge)
 Play MIDI files into any Roblox piano. Auto player with human-like playing,
 live MIDI keyboard support, a built-in Synthesia-style visualizer, audio→MIDI
 transcription, letter sheets, full theming — one app, no setup.
@@ -7,8 +10,16 @@ transcription, letter sheets, full theming — one app, no setup.
 > Use responsibly and follow the rules of any experience you play in.
 ---
 Download
-Grab RAMP_release.zip from the latest release,
-extract anywhere, run `RAMP.exe`.
+⬇️ Download the latest RAMP_release.zip
+Extract anywhere, run `RAMP.exe` — that's it. Portable: no installer, no
+Python, nothing else to download.
+Supported:
+	
+OS	Windows 10 / Windows 11 (64-bit)
+Install	None — portable folder, settings live in `%APPDATA%\RAMP`
+Internet	Only needed for Cloud transcription, `.mid` links, and updates
+Sound out of the box	Yes — pick Microsoft GS Wavetable Synth in Settings → Sound, or load any `.sf2`/`.sfz`
+Not supported	macOS / Linux (RAMP sends Windows keystrokes)
 RAMP updates itself: when a new version is released here, you'll see
 Update available in the logs — Settings → About RAMP → Update & restart
 installs it in one click.
