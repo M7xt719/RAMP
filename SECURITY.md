@@ -75,9 +75,7 @@ positive is.
    network code is the update check and the transcription upload.
 2. **Watch its network.** Open Windows **Resource Monitor → Network**, run RAMP,
    and confirm it only talks to GitHub (until you press Transcribe).
-3. **Build it yourself.** Run `build_exe.bat` to produce your own `RAMP.exe`
-   from this exact source. Then you have proof of what's inside.
-4. **Scan on VirusTotal** and look at *which* engines flag it — you'll see it's
+3. **Scan on VirusTotal** and look at *which* engines flag it — you'll see it's
    mostly heuristic/generic detections (names like `Wacatac`, `Convagent`,
    `AIDetect`, `ML.Attribute`), which are the classic false-positive signatures
    for packed Python apps, not real named malware families.
