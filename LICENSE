@@ -1,0 +1,28 @@
+Copyright (c) 2026 M7xt. All rights reserved.
+
+RAMP (Roblox Auto MIDI Player) and its source code are the property of M7xt.
+
+You MAY:
+  - Download, install and use RAMP for free, for personal use.
+  - Share a link to the official releases page.
+
+You MAY NOT, without written permission from M7xt:
+  - Copy, reuse, or adapt any part of this source code in your own project.
+  - Redistribute RAMP, modified or unmodified, including re-uploading the
+    build anywhere else.
+  - Reverse engineer, decompile, deobfuscate or extract the code or assets
+    from the built application.
+  - Sell RAMP, bundle it with anything sold, or charge for access to it.
+  - Remove or alter the credits.
+
+This software is provided "as is", without warranty of any kind, express or
+implied. The author is not liable for any claim, damages or other liability
+arising from the use of this software.
+
+RAMP is not affiliated with or endorsed by Roblox Corporation.
+
+Third-party components remain under their own licenses (PySide6/Qt, mido,
+numpy, pynput, sounddevice, FluidSynth, and the transcription models Kong,
+Transkun and Pop2Piano).
+
+For permissions, contact M7xt.
