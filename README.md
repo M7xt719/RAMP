@@ -24,6 +24,42 @@ Human-like auto playing · live MIDI keyboard · black-MIDI visualizer · AI aud
 
 ---
 
+## 🛡️ Is RAMP safe? Why antivirus may warn you
+
+**RAMP is not a virus.** It does **not** touch your browser, your cookies, your Roblox login, your passwords, or anything on your account. Those claims are false. RAMP has **no code that reads browser data of any kind** — you can verify this yourself in the source (search the code for `cookie`, `chrome`, `login` — there are zero matches that touch browser data).
+
+Some antivirus tools and Windows SmartScreen may still show a warning the first time you run it. **This is a false positive, and here is exactly why it happens:**
+
+| Why it gets flagged | The honest reason |
+|---|---|
+| **It's a PyInstaller `.exe`** | RAMP is Python packed into one file. Antivirus engines flag *all* PyInstaller apps by default because some malware also uses PyInstaller — it's guilt by packaging, not by behaviour. |
+| **It sends keystrokes** | RAMP plays piano by sending key presses to Roblox (the whole point of an auto-player). That uses the same Windows API (`SendInput`) that a keylogger *could* use — so heuristic scanners get nervous. RAMP only ever **sends** keys; it does not record what you type. |
+| **It's unsigned + new** | RAMP isn't code-signed with a paid certificate yet, and not many people have downloaded it, so Windows SmartScreen has no "reputation" for it and warns by default. |
+
+**What RAMP actually does with your computer — the complete list:**
+
+- ✅ Reads/writes **only its own folders**: `%APPDATA%\RAMP` (settings, logs) and its `midi` folder, plus your **Music/Downloads** folders *only* to list songs to play (you choose the folder).
+- ✅ Sends **key presses** to the active window so it can play piano in Roblox.
+- ✅ Makes network requests to **exactly these** and nothing else:
+  - `api.github.com/repos/M7xt719/RAMP` — to check for RAMP updates.
+  - The audio→MIDI transcription service (only when *you* press Transcribe).
+  - Optional model downloads (Transkun/FluidSynth) **only if you enable those features**.
+- ❌ **Never** reads your browser, cookies, saved passwords, or Roblox login.
+- ❌ **Never** sends your files, keystrokes, or account data anywhere.
+- ❌ **No hidden background activity.** RAMP is fully open-source — every line is in this repo.
+
+**Don't trust me — verify it:**
+
+1. **Read the source.** It's all here. Nothing is obfuscated.
+2. **Check the network yourself.** Run RAMP behind a firewall/monitor (e.g. Windows Resource Monitor → Network) and you'll see it only contacts GitHub for the update check.
+3. **Scan a specific concern?** If any file worries you, open an issue and I'll point you to the exact lines.
+
+> If you got the exe from somewhere **other than this official repo's Releases page**, delete it — only downloads from [the official Releases](../../releases/latest) are RAMP. Someone reuploading a modified build elsewhere could add anything, and that would not be RAMP.
+
+See [SECURITY.md](SECURITY.md) for how to submit the false-positive to Microsoft/your AV (which clears the warning for everyone), and the roadmap for code-signing.
+
+---
+
 ## ⚡ Why RAMP
 
 |  |  |
