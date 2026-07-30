@@ -6,9 +6,13 @@
 
 **The most advanced auto player of 2026.**
 
-Human-like auto playing · live MIDI keyboard · black-MIDI visualizer · AI audio→MIDI · letter sheets · full theming — one portable app.
+Human-like auto playing · live MIDI keyboard · black-MIDI visualizer · audio/video/PDF → MIDI · PianoBinds remapper · letter sheets · full theming — one portable app.
 
 <br>
+
+[![Latest version](https://img.shields.io/github/v/release/M7xt719/RAMP?style=for-the-badge&label=LATEST&color=6366f1&sort=semver)](../../releases/latest)
+[![Release date](https://img.shields.io/github/release-date/M7xt719/RAMP?style=for-the-badge&label=RELEASED&color=1D9E75)](../../releases/latest)
+[![Downloads](https://img.shields.io/github/downloads/M7xt719/RAMP/total?style=for-the-badge&label=DOWNLOADS&color=8b5cf6)](../../releases/latest)
 
 [![Download for Windows](https://img.shields.io/badge/DOWNLOAD-Windows%2010%20%2F%2011-6366f1?style=for-the-badge&logo=windows&logoColor=white)](../../releases/latest)
 ![Portable](https://img.shields.io/badge/PORTABLE-no%20install-22c55e?style=for-the-badge)
@@ -52,7 +56,8 @@ Some antivirus tools and Windows SmartScreen may still show a warning the first 
 
 1. **Read the source.** It's all here. Nothing is obfuscated.
 2. **Check the network yourself.** Run RAMP behind a firewall/monitor (e.g. Windows Resource Monitor → Network) and you'll see it only contacts GitHub for the update check.
-3. **Scan a specific concern?** If any file worries you, open an issue and I'll point you to the exact lines.
+3. **Build it yourself.** Run `build_exe.bat` to compile your own `RAMP.exe` from this exact source — then you *know* what's in it.
+4. **Scan a specific concern?** If any file worries you, open an issue and I'll point you to the exact lines.
 
 > If you got the exe from somewhere **other than this official repo's Releases page**, delete it — only downloads from [the official Releases](../../releases/latest) are RAMP. Someone reuploading a modified build elsewhere could add anything, and that would not be RAMP.
 
